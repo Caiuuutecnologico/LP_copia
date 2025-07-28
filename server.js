@@ -17,7 +17,7 @@ app.use(cors());
 
 // INICIALIZAÇÃO DO SERVIDOR
 app.listen(PORT, function () {
-  console.log(`Servidor rodando em http://localhost:${PORT}`);
+  console.log(`Servidor rodando em http://localhost:${PORT}?utm_source=facebook&utm_medium=social&utm_campaign=lancamento`);
 });
 
 // CONFIGURAÇÃO PARA RODAR O FRONT NO SERVIDOR

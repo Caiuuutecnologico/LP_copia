@@ -20,7 +20,7 @@ utmVerify();
 
         console.log('UTMs:', {utmSource, utmMedium, utmCampaign});
 
-    let url = `https://script.google.com/macros/s/AKfycbwN-zomoCQ7AWruKsBLXnR-jaJfmNx3SPyO3EhUz1C-wTmk7ZOhCuIHZ4K_EeZItQrEiw/exec`
+    let url = `https://script.google.com/macros/s/AKfycbxkV6WSZU2bfxyODYb56fpvNoug1YYQejHMoWemz5pNEiUkGzMQ_BycrY5yAwOhvXB6/exec`
     + `?utmSource=${encodeURIComponent(utmSource)}`
     + `&utmMedium=${encodeURIComponent(utmMedium)}`
     + `&utmCampaign=${encodeURIComponent(utmCampaign)}`
