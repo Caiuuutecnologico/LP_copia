@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lidermed</title>
+    <link rel="icon" href="./images/favicon.ico" sizes="32x32">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="modal.css">
+</head>
+
+<body>
+    <header class="header-content">
+
+        <div class="comprar">
+            <button class="float comprar-link">
+                <a href="#second">comprar</a>
+            </button>
+        </div>
+        <div class="logo-container">
+            <a href="#top">
+                <img class="logo" src="./images/logo_sem_fundo.PNG">
+            </a>
+        </div>
+        <div class="funcionalidades">
+            <button class="float saiba-link">
+                <a href="#third">saiba mais</a>
+            </button>
+        </div>
+    </header>
+    <main class="main-content">
+        <!-- SEÇÃO 1 -->
+        <div class="first-container" id="top">
+            <div class="main-text">
+                <h1>CONTROLE TOTAL DE EPIS COM TECNOLOGIA</h1>
+                <h2>Simples, Rápido e Digital</h2>
+            </div>
+            <div class="cta-container">
+                <h2>Biometria | Relatórios | PGR | Histórico de Entregas e Trocas</h2>
+                <button onclick="abrirModal()" class="float button">Demonstração Gratuita!</button>
+            </div>
+        </div>
+        <!-- SEÇÃO 2 -->
+        <div class="second-container">
+            <div class="second-text">
+                <h2>Empresas que ainda usam planilhas ou papel <strong>enfrentam riscos sérios:</strong></h2>
+                <div class="second-text-content">
+                    <div>
+                        <div class="list">
+                            <ul style="list-style-type: none;">
+                                <li>
+                                    <h3><i class="fa-solid fa-circle"></i>
+                                        Perda de controle sobre prazos
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3><i class="fa-solid fa-circle"></i>
+                                        Falta de rastreabilidade
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3><i class="fa-solid fa-circle"></i>
+                                        Falhas em auditorias
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3><i class="fa-solid fa-circle"></i>
+                                        Multas e retrabalho
+                                    </h3>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="second-container-images-container">
+                        <img class="prancheta" src="./images/PRANCHETA_SEM_FUNDO_LO1.png">
+                    </div>
+                </div>
+            </div>
+            <div class="solution">
+                <h2>O <strong>LíderMed Tech</strong> oferece:</h2>
+                <div class="solution-content">
+                    <div>
+                        <div class="list">
+                            <ul style="list-style-type: none;">
+                                <li>
+                                    <h3><i class="fa-solid fa-circle"></i>
+                                        Controle biométrico individual
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3><i class="fa-solid fa-circle"></i>
+                                        Emissão automática de relatórios
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3><i class="fa-solid fa-circle"></i>
+                                        Integração com seu PGR
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3><i class="fa-solid fa-circle"></i>
+                                        Gestão de prazos de troca de EPI
+                                    </h3>
+                                </li>
+                            </ul>
+                            <button onclick="abrirModal2()" class="float buy-button" id="third">Compre agora o Lidermed
+                                Tech!</button>
+                        </div>
+                    </div>
+                    <div class="second-container-images-container">
+                        <img class="biometria" src="./images/BIOMETRIA_SEM_FUNDO.png" id="second">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SEÇÃO 3 -->
+        <div class="third-container">
+            <h1>Nossas Funcionalidades</h1>
+            <div class="third-container-content">
+                <div>
+                    <img class="third-container-icons" src="./images/BIOMETRIA_ICON.png">
+                    <h2>Registro biométrico</h2>
+                    <p>
+                        O registro biométrico utiliza características únicas de cada indivíduo, como a impressão digital
+                        ou o reconhecimento facial para realizar a identificação com precisão. Essa tecnologia garante
+                        que cada pessoa seja reconhecida de forma única, evitando fraudes e aumentando a confiabilidade
+                        dos registros.
+                    </p>
+                </div>
+                <div>
+                    <img class="third-container-icons" src="./images/PRANCHETA-ICON_LO1.png">
+                    <h2>Relatórios com 1 clique</h2>
+                    <p>
+                        A LíderMed Tech oferece uma gestão completa e inteligente de EPIs, com relatórios práticos que
+                        facilitam o dia a dia das empresas. Entre as funcionalidades disponíveis, estão o histórico
+                        detalhado de entrega de EPIs por colaborador, com datas, quantidades e registro biométrico; o
+                        controle de vencimentos e reposições, que permite antecipar trocas e manter a segurança sempre
+                        em dia.
+                    </p>
+                </div>
+            </div>
+            <div class="third-container-content">
+                <div>
+                    <img class="third-container-icons" src="./images/dinheiro-de-volta_ICON.png">
+                    <h2>Controle de trocas e vencimentos</h2>
+                    <p>
+                        Disponibilizamos o relatório de pendências, que mostra de forma rápida quem ainda não recebeu os
+                        equipamentos, o relatório de consumo por período, que auxilia no planejamento de estoque e
+                        compras, com todos os dados organizados, prontos para apresentação a qualquer momento.
+                    </p>
+                </div>
+                <div>
+                    <img class="third-container-icons" src="./images/integration_ICON.png">
+                    <h2>Integração com PGR</h2>
+                    <p>
+                        A LíderMed Tech entrega mais do que EPIs: oferece relatórios práticos que se integram
+                        diretamente ao PGR (Programa de Gerenciamento de Riscos) da sua empresa. Com dados que a
+                        ferramenta entrega, é possível comprovar o fornecimento adequado de EPIs, avaliar a eficácia das
+                        medidas preventivas e organizar ações corretivas com base em informações reais. Essa integração
+                        fortalece a segurança do trabalho, garante conformidade com a NRs e é uma grande aliada para que
+                        seu plano de ação saia do papel.
+                    </p>
+                </div>
+            </div>
+            <div class="buy-button-container">
+                <button onclick="abrirModal2()" class="float buy-button2" id="third">Compre agora o Lidermed
+                    Tech!</button>
+            </div>
+        </div>
+        <!-- SEÇÃO RODAPÉ -->
+        <div class="footer-content">
+            <div class="left-footer">
+            <div class="contato">
+                <h3>Contato</h3>
+                <p><i class="fa-solid fa-phone"></i>  (12) 3962-4723</p>
+            </div>
+            <div class="endereco">
+                <h3>Endereço</h3>
+                <p><i class="fa-solid fa-location-dot"></i>  R. José Bonifácio, 129 - Centro, Jacareí - SP, 12327-190</p>
+                <p><i class="fa-solid fa-location-dot"></i>  R. Heloísa Monteiro Paixão, 17 - Parque Santo Amaro, Campos dos Goytacazes - RJ, 28030-590</p>
+            </div>
+            </div>
+            <div class="right-footer">
+                <h3>Nossas redes sociais</h3>
+            <div class="footer-icons">
+                <div class="social-media float">
+                    <a href="https://www.facebook.com/lidermedoficial" target="_blank">
+                <img src="./images/003-facebook.png">
+                    </a>
+                </div>
+                <div class="social-media float">
+                    <a href="https://www.linkedin.com/company/lidermed-seguranca-e-medicina-do-trabalho/" target="_blank">
+                <img src="./images/001-linkedin.png">
+                    </a>
+                </div>
+                <div class="social-media float">
+                    <a href="https://www.instagram.com/lidermedoficial" target="_blank">
+                <img src="./images/004-instagram.png">
+                    </a>
+                </div>
+                <div class="social-media float">
+                    <a href="https://www.youtube.com/@LiderMedOficial" target="_blank">
+                <img src="./images/002-youtube.png">
+                    </a>
+                </div>
+                <div class="social-media float">
+                    <a href="https://open.spotify.com/show/2rGJcMDPNuxrVHwG1ufm3T" target="_blank">
+                <img src="./images/005-spotify.png">
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- SEÇÃO MODAL -->
+    <!-- MODAL DEMONSTRAÇÃO -->
+    <dialog class="modal">
+        <div class="popup">
+            <div class="popup-content">
+                <h3>mensagem do popup</h3>
+            </div>
+        </div>
+        <div class="modal-header">
+            <h1>Formulário</h1>
+            <button class="button-close" onclick="fecharModal()"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-container">
+            <form class="formulario">
+                <div class="resposta-container">
+                    <label for="1">Nome completo</label>
+                    <input type="text" id="1" class="campo">
+                </div>
+                <div class="resposta-container">
+                    <label for="2">Nome da empresa</label>
+                    <input type="text" id="2" class="campo">
+                </div>
+                <div class="resposta-container">
+                    <label for="3">CNPJ</label>
+                    <input type="text" id="3" class="campo" placeholder=" Ex: 00.623.904/0001-73">
+                </div>
+                <div class="resposta-container">
+                    <label for="4">Cargo</label>
+                    <input type="text" id="4" class="campo">
+                </div>
+                <div class="resposta-container">
+                    <label for="5">Email corporativo</label>
+                    <input type="text" id="5" class="campo">
+                </div>
+                <div class="resposta-container">
+                    <label for="6">WhatsApp (com DDD) </label>
+                    <input type="text" id="6" class="campo" placeholder=" Ex: (12) 44599-2528">
+                </div>
+                <div class="seletor-container">
+                    <fieldset class="seletor-campo">
+                        <legend class="legend-text">Quero agendar uma demonstração</legend>
+                        <div class="options">
+                            <div>
+                                <label for="7">Sim</label>
+                                <input type="radio" id="7" value="sim" name="agenda">
+                            </div>
+                            <div>
+                                <label for="8">Não</label>
+                                <input type="radio" id="8" value="não" name="agenda">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-submit">
+                    <button type="button" onclick="enviar(event)" class="float form-button">Enviar e Falar com um
+                        Especialista</button>
+                </div>
+            </form>
+        </div>
+
+    </dialog>
+
+    <!-- MODAL COMPRA -->
+    <dialog class="modal2">
+        <div class="popup-2">
+            <div class="popup-content-2">
+                <h3>mensagem do popup</h3>
+            </div>
+        </div>
+        <div class="modal-header">
+            <h1>Formulário</h1>
+            <button class="button-close" onclick="fecharModal2()"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-container">
+            <form class="formulario">
+                <div class="resposta-container">
+                    <label for="11">Nome completo</label>
+                    <input type="text" id="11" class="campo">
+                </div>
+                <div class="resposta-container">
+                    <label for="12">Nome da empresa</label>
+                    <input type="text" id="12" class="campo">
+                </div>
+                <div class="resposta-container">
+                    <label for="13">CNPJ</label>
+                    <input type="text" id="13" class="campo" placeholder=" Ex: 00.623.904/0001-73">
+                </div>
+                <div class="resposta-container">
+                    <label for="14">Cargo</label>
+                    <input type="text" id="14" class="campo">
+                </div>
+                <div class="resposta-container">
+                    <label for="15">Email corporativo</label>
+                    <input type="text" id="15" class="campo">
+                </div>
+                <div class="resposta-container">
+                    <label for="16">WhatsApp (com DDD)</label>
+                    <input type="text" id="16" class="campo" placeholder=" Ex: (12) 44599-2528">
+                </div>
+                <div class="seletor-container">
+                    <fieldset class="seletor-campo">
+                        <legend class="legend-text">Quero receber uma proposta</legend>
+                        <div class="options">
+                            <div>
+                                <label for="17">Sim</label>
+                                <input type="radio" id="17" value="sim" name="proposta">
+                            </div>
+                            <div>
+                                <label for="18">Não</label>
+                                <input type="radio" id="18" value="não" name="proposta">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-submit">
+                    <button type="button" onclick="comprar(event)" class="float form-button">Enviar e Falar com um
+                        Especialista</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
