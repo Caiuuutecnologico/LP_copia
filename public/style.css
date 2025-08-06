@@ -6,6 +6,7 @@
     --color-teal-transparent: #158688cb;
     --color-teal-light: #8fa6abb3;
     --color-gray: #8B888E;
+    --color-gray-secondary: #68c5d2;
 
     /* SOMBRA */
     --box-shadow-default: 2px 2px 8px rgba(0, 0, 0, 0.6);
@@ -34,7 +35,7 @@ body {
 
 .fa-circle {
     color: var(--color-teal);
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .fa-circle-info {
@@ -126,6 +127,7 @@ main {
     padding: 25px;
     gap: 40px;
     padding-top: 100px;
+    background-color: var(--color-offwhite);
 }
 
 .main-text {
@@ -155,7 +157,7 @@ main {
 }
 
 .cta-container h2 {
-    color: var(--color-gray);
+    color: var(--color-gray-secondary);
     font-size: 40px;
     font-weight: 300;
 }
@@ -175,57 +177,77 @@ main {
 .second-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background: var(--gradient-main);
+    background: transparent;
+    background-image: url(./images/BG_PRANCHETA_NOTE_LO1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto;
+    height: auto;
+    gap: 40px;
+    background-color: var(--color-offwhite);
+}
+
+.second-container-images-container {
+    width: 50px;
+    height: 50px;
+    background: transparent;
 }
 
 .second-text {
-    padding-left: 12px;
-    padding-right: 12px;
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    padding-left: 50px;
 }
 
 .second-text-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 150px;
+
+}
+
+.solution {
+    padding-bottom: 100px;
 }
 
 .solution-content {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-}
-
-.prancheta,
-.biometria {
-    width: 500px;
-    height: 500px;
 }
 
 .second-text h2 {
     display: flex;
     flex-direction: column;
     align-items: first baseline;
-    padding-left: 70px;
-    width: 60vw;
+    width: 80vw;
+    margin: 0;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    text-align: left;
+    padding-left: 20px;
 }
 
 .second-text h2,
 .solution h2 {
     color: var(--color-gray);
-    font-size: 75px;
     font-weight: 300;
+    font-size: 70px;
+}
+
+span {
+    color: var(--color-teal);
+    font-weight: bold;
 }
 
 strong {
     color: var(--color-teal);
     font-weight: bold;
 }
+
 
 .solution {
     width: 100vw;
@@ -235,21 +257,69 @@ strong {
 
 .solution h2 {
     text-align: right;
-    padding-right: 70px;
+    padding-right: 100px;
+    margin: 0;
 }
 
-.list {
+.second-text-content div .list {
     display: flex;
     align-items: first baseline;
     flex-direction: column;
-    font-family: "Inter", Sans-serif;
-    font-size: 30px;
+    font-size: 39px;
     align-items: center;
     color: var(--color-gray);
+    padding-top: 10px;
+    text-align: left;
+    padding-right: 600px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.solution-content li {
+    margin-bottom: 5px;
+    padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
 li h3 {
     font-weight: 300;
+    margin: 18px;
+}
+
+.second-container-images-container-2 {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+}
+
+.solution-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.solution-content div .list {
+    text-align: right;
+    display: flex;
+    align-items: first baseline;
+    flex-direction: column;
+    font-size: 39px;
+    align-items: center;
+    color: var(--color-gray);
+    padding-top: 35px;
+    padding-right: 100px;
 }
 
 .buy-button {
@@ -258,16 +328,18 @@ li h3 {
     border: 0;
     padding: 15px;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 300;
-    margin-top: 18px;
+    margin-top: 25px;
     cursor: pointer;
-    width: 318.25px;
+    width: 400px;
+    margin-left: 240px;
 }
 
 .third-container {
     display: flex;
     flex-direction: column;
+    background: transparent;
 }
 
 .third-container h1 {
@@ -301,10 +373,11 @@ li h3 {
     flex-direction: column;
     align-items: center;
     width: 30vw;
-    height: 431.68px;
+    height: 435.68px;
     max-width: 400px;
     padding: 20px;
     text-align: center;
+    margin-bottom: 80px;
 }
 
 .third-container-content h2 {
@@ -337,10 +410,11 @@ li h3 {
     border: 0;
     padding: 15px;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 300;
     cursor: pointer;
-    width: 318.25px;
+    width: 400px;
+    ;
     margin-bottom: 30px;
 }
 
@@ -359,13 +433,20 @@ li h3 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 25vh;
-    padding: 28px;
+    height: auto;
+    padding: 17px;
     color: var(--color-offwhite);
 }
 
 .footer-content h3 {
     font-weight: 1000;
+}
+
+.telefone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
 }
 
 .footer-content p {
@@ -393,11 +474,12 @@ li h3 {
 
 .social-media {
     border: 1px solid var(--color-offwhite);
-    padding: 12px;
-    border-radius: 50%;
+    padding: 10px;
+    border-radius: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 20px;
 }
 
 .social-media:hover {
@@ -451,6 +533,7 @@ li h3 {
         flex-direction: column;
         height: 85vh;
         justify-content: center;
+        background-attachment: scroll;
     }
 
     .main-text h1 {
@@ -475,16 +558,90 @@ li h3 {
         font-weight: 500;
     }
 
-    .second-text h2,
-    .solution h2 {
-        font-size: 25px;
+    .second-container {
+        background-image: url(./images/SECAO_RESPONSIVA_CEL_VERTICAL_LO2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
+    .second-text {
+        padding-top: 210px;
+        margin-top: 50px;
+    }
+
+    .second-text,
+    .solution {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .second-text h2 {
+        width: 100vw;
+        font-size: 28px;
+    }
+
+    .solution h2 {
+        font-size: 32px;
+        text-align: center;
+        width: 100vw;
+        padding-right: 0;
+        align-items: center;
+    }
+
+    .second-text-content div .list {
+        font-size: 17px;
+        align-items: center;
+        padding-right: 0;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .solution-content div .list {
+        font-size: 17px;
+        align-items: center;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .second-text-content li {
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 3px;
+        text-align: center;
+        padding-left: 35px;
+    }
+
+    .solution-content li {
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 3px;
+    }
+
+    .fa-circle {
+        font-size: 9.5px;
+    }
+
 
     .third-container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+    .third-container-content div {}
 
     .third-container h1 {
         font-size: 43px;
@@ -502,13 +659,21 @@ li h3 {
     .solution {
         width: 80vw;
         padding: 10px;
+        margin-top: 130px;
     }
 
-    .button,
-    .buy-button {
+    .button {
         width: 90%;
         padding: 13px;
         font-size: 16px;
+    }
+
+    .buy-button {
+        width: 70vw;
+        padding: 13px;
+        font-size: 16px;
+        margin-left: 0;
+        margin-right: 65px;
     }
 
     .buy-button2 {
@@ -516,7 +681,7 @@ li h3 {
         height: 10%;
         padding: 14px;
         font-size: 16px;
-        margin-top: 25px;
+        margin-top: 0;
     }
 
     .third-container-content {
@@ -524,6 +689,12 @@ li h3 {
         flex-direction: column;
         padding: 0 10px;
         align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .third-container h1 {
+        background-attachment: scroll;
     }
 
     .third-container div {
@@ -541,12 +712,25 @@ li h3 {
         text-align: center;
     }
 
+    .buy-button-container {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
     .footer-content {
         display: flex;
         flex-direction: column;
-        height: 45vh;
+        height: auto;
         align-items: center;
         text-align: center;
+    }
+
+    .telefone {
+        justify-content: center;
     }
 
     .right-footer {
@@ -632,17 +816,40 @@ li h3 {
 
     .second-text h2,
     .solution h2 {
-        font-size: 32px;
+        font-size: 35px;
+        width: 90vw;
     }
 
-    .list {
-        font-size: 20px;
+    .second-text h2 {
+        font-size: 35px;
+        text-align: left;
+        padding-left: 4px;
     }
 
-    .prancheta,
-    .biometria {
-        width: 300px;
-        height: auto;
+    .second-container {
+        background-image: url(./images/SECAO_RESPONSIVA_CEL_DEITADO_02.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .second-text div .list,
+    .solution-content div .list {
+        font-size: 18px;
+    }
+
+    .solution-content div .list {
+        align-items: flex-end;
+        text-align: right;
+        padding-right: 80px;
+    }
+
+    li {
+        width: 50vw;
+    }
+
+    .fa-circle {
+        font-size: 10px;
     }
 
     .third-container h1 {
@@ -650,6 +857,7 @@ li h3 {
         height: 45vh;
         padding: 20px;
         text-align: center;
+        background-attachment: scroll;
     }
 
     .third-container-content {
@@ -680,19 +888,28 @@ li h3 {
 
     .buy-button,
     .buy-button2 {
-        width: 50vw;
         font-size: 18px;
         padding: 12px;
     }
 
+    .buy-button-container {
+        margin-top: 30px;
+    }
+
+    .buy-button {
+        width: 40vw;
+    }
+
     .buy-button2 {
         margin-top: 25px;
+        width: 50vw;
     }
 
     .footer-content {
         display: flex;
         justify-content: space-between;
-        height: 47vh;
+        height: auto;
+        margin: 0;
     }
 
     .footer-content p {
