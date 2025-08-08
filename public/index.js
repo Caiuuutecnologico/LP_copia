@@ -27,7 +27,7 @@ async function utmVerify() {
     };
 
     try {
-        const resposta = await fetch('/utms', {
+        const resposta = await fetch('https://lp-copia-back.onrender.com/utms', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -150,7 +150,7 @@ async function enviar(event) {
     };
 
     try {
-        const resposta = await fetch('/envio', {
+        const resposta = await fetch('https://lp-copia-back.onrender.com/envio', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -230,7 +230,7 @@ async function comprar(event) {
     };
 
     try {
-        const resposta = await fetch('/compra', {
+        const resposta = await fetch('https://lp-copia-back.onrender.com/compra', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
