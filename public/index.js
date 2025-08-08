@@ -6,7 +6,7 @@ utmVerify();
 
 
 //FUNÇÃO DE VERIFICAÇÃO DE UTM
-    function utmVerify() {
+async function utmVerify() {
     // CAPTURA OS PARAMETROS UTM
     let urlParams = new URLSearchParams(window.location.search);
     let utmSource = urlParams.get('utm_source') || '';
@@ -20,13 +20,33 @@ utmVerify();
 
         console.log('UTMs:', {utmSource, utmMedium, utmCampaign});
 
-    let url = `https://script.google.com/macros/s/AKfycbxkV6WSZU2bfxyODYb56fpvNoug1YYQejHMoWemz5pNEiUkGzMQ_BycrY5yAwOhvXB6/exec`
-    + `?utmSource=${encodeURIComponent(utmSource)}`
-    + `&utmMedium=${encodeURIComponent(utmMedium)}`
-    + `&utmCampaign=${encodeURIComponent(utmCampaign)}`
+    const dados = {
+        utmSource,
+        utmMedium,
+        utmCampaign
+    };
 
-    let img = new Image();
-    img.src = url;
+    try {
+        const resposta = await fetch('/utms', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(dados)
+        });
+
+        if (!resposta.ok) {
+            throw new Error('Erro ao enviar dados');
+        }
+
+    const result = await resposta.json();
+    console.log("Sucesso:", result);
+
+    
+
+    } catch (erro) {
+        console.error("Erro na requisição:", erro);
+    }
 }
     
 // MODAL DE DEMONSTRAÇÃO
@@ -77,9 +97,15 @@ function abrirPopupErro(tag1, elemento, tag2) {
     setTimeout(function() { popup.style.display = "none"; }, 2000);
 }
 
+function abrirPopupAcerto() {
+    let popup = document.querySelector(".popup-3");
+    popup.style.display = "flex";
+    setTimeout(function() { popup.style.display = "none"; }, 2000);
+}
+
 
 // FUNÇÃO PARA ENVIAR OS DADOS DA DEMONSTRAÇÃO
-function enviar(event) {
+async function enviar(event) {
     event.preventDefault();
 
     let nome = document.getElementById('1').value;
@@ -112,30 +138,47 @@ function enviar(event) {
 
     let dataHora = new Date().toLocaleString();
 
-    let url = `https://script.google.com/macros/s/AKfycbwZ_55tVd63SBw8YSuSfyP2fH1nPB9VBz5I6tbyjQJU3rW0IcPcUvfyV2fWmwmSsxyNmw/exec`
-        + `?nome=${encodeURIComponent(nome)}`
-        + `&empresa=${encodeURIComponent(empresa)}`
-        + `&cnpj=${encodeURIComponent(cnpj)}`
-        + `&cargo=${encodeURIComponent(cargo)}`
-        + `&email=${encodeURIComponent(email)}`
-        + `&zap=${encodeURIComponent(zap)}`
-        + `&agenda=${encodeURIComponent(agendaSelecionado)}`
-        + `&dataHora=${encodeURIComponent(dataHora)}`;
+    const dados = {
+        nome,
+        empresa,
+        cnpj,
+        cargo,
+        email,
+        zap,
+        agenda: agendaSelecionado,
+        dataHora
+    };
 
-    const win = window.open(url, '_blank');
-if (win) {
-  win.blur();
-  window.focus();
-}
+    try {
+        const resposta = await fetch('/envio', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(dados)
+        });
+
+        if (!resposta.ok) {
+            throw new Error('Erro ao enviar dados');
+        }
+
+    const result = await resposta.json();
+    console.log("Sucesso:", result);
+
+    
+
+    } catch (erro) {
+        console.error("Erro na requisição:", erro);
+    }
 
     fecharModal();
     document.querySelector('.modal .formulario').reset();
-    }   
-
+    abrirPopupAcerto();
+}
 
 
 // FUNÇÃO PARA ENVIAR OS DADOS DE COMPRA
-function comprar(event) {
+async function comprar(event) {
     event.preventDefault();
 
     // VALORES DO HTML COLOCADOS EM VARIÁVEIS JS    
@@ -175,23 +218,41 @@ function comprar(event) {
 
     let dataHora = new Date().toLocaleString();    
 
-    let url = `https://script.google.com/macros/s/AKfycbzOslYPeLFh-GCxrw6xCvTegSUvTcDYbtJIQpa6TViuY4a_PhNOgdm45Lppe0LxJAkQoA/exec`
-        + `?nome=${encodeURIComponent(nome2)}`
-        + `&empresa=${encodeURIComponent(empresa2)}`
-        + `&cnpj=${encodeURIComponent(cnpj2)}`
-        + `&cargo=${encodeURIComponent(cargo2)}`
-        + `&email=${encodeURIComponent(email2)}`
-        + `&zap=${encodeURIComponent(zap2)}`
-        + `&proposta=${encodeURIComponent(propostaSelecionado)}`
-        + `&dataHora=${encodeURIComponent(dataHora)}`;
+    const dados = {
+        nome2,
+        empresa2,
+        cnpj2,
+        cargo2,
+        email2,
+        zap2,
+        proposta: propostaSelecionado,
+        dataHora
+    };
 
-    const win = window.open(url, '_blank');
-if (win) {
-  win.blur();
-  window.focus();
-}
+    try {
+        const resposta = await fetch('/compra', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(dados)
+        });
+
+        if (!resposta.ok) {
+            throw new Error('Erro ao enviar dados');
+        }
+
+    const result = await resposta.json();
+    console.log("Sucesso:", result);
+
+    
+
+    } catch (erro) {
+        console.error("Erro na requisição:", erro);
+    }
 
     fecharModal2();
     document.querySelector('.modal2 .formulario').reset();
+    abrirPopupAcerto();
     }
 
