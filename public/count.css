@@ -60,5 +60,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 40px;
+    height: 440px;
+    padding: 15px;
 }
+    .social-media-count {
+    height: 18px;
+}
+
+.social-media-count img {
+    width: 18px;
+    height: 18px;
+}
+
 }
