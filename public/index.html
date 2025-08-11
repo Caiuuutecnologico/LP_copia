@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
     <title>Lidermed</title>
     <link rel="icon" href="./images/favicon.ico" sizes="32x32">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="count.css">
 </head>
 
 <body>
@@ -48,28 +50,28 @@
         <!-- SEÇÃO 2 -->
         <div class="second-container">
             <div class="second-text">
-                <h2>Empresas que ainda usam planilhas ou papel <strong>enfrentam riscos sérios:</strong></h2>
+                <h2>Empresas que ainda usam <br>planilhas ou papel enfrentam<strong>riscos sérios:</strong></h2>
                 <div class="second-text-content">
                     <div>
                         <div class="list">
                             <ul style="list-style-type: none;">
-                                <li>
-                                    <h3><i class="fa-solid fa-circle"></i>
+                                <li><i class="fa-solid fa-circle"></i>
+                                    <h3>
                                         Perda de controle sobre prazos
                                     </h3>
                                 </li>
-                                <li>
-                                    <h3><i class="fa-solid fa-circle"></i>
+                                <li><i class="fa-solid fa-circle"></i>
+                                    <h3>
                                         Falta de rastreabilidade
                                     </h3>
                                 </li>
-                                <li>
-                                    <h3><i class="fa-solid fa-circle"></i>
+                                <li><i class="fa-solid fa-circle"></i>
+                                    <h3>
                                         Falhas em auditorias
                                     </h3>
                                 </li>
-                                <li>
-                                    <h3><i class="fa-solid fa-circle"></i>
+                                <li><i class="fa-solid fa-circle"></i>
+                                    <h3>
                                         Multas e retrabalho
                                     </h3>
                                 </li>
@@ -77,41 +79,54 @@
                         </div>
                     </div>
                     <div class="second-container-images-container">
+                       
                     </div>
+                    
                 </div>
+                <div id="second"></div>
             </div>
-            <div class="solution">
+            <div class="solution" >
                 <h2>O <strong>LíderMed Tech</strong> oferece:</h2>
                 <div class="solution-content">
                     <div>
                         <div class="list">
                             <ul style="list-style-type: none;">
                                 <li>
-                                    <h3><i class="fa-solid fa-circle"></i>
+                                    <i class="fa-solid fa-circle"></i>
+                                
+                                    <h3>
                                         Controle biométrico individual
+                                        
                                     </h3>
                                 </li>
                                 <li>
-                                    <h3><i class="fa-solid fa-circle"></i>
+                                    <i class="fa-solid fa-circle"></i>
+                                    <h3>
                                         Emissão automática de relatórios
+                                        
                                     </h3>
                                 </li>
                                 <li>
-                                    <h3><i class="fa-solid fa-circle"></i>
+                                    <i class="fa-solid fa-circle"></i>
+                                    <h3>
                                         Integração com seu PGR
+                                       
                                     </h3>
                                 </li>
                                 <li>
-                                    <h3><i class="fa-solid fa-circle"></i>
+                                    <i class="fa-solid fa-circle"></i>
+                                    <h3>
                                         Gestão de prazos de troca de EPI
+                                        
                                     </h3>
                                 </li>
                             </ul>
-                            <button onclick="abrirModal2()" class="float buy-button" id="third">Compre agora o Lidermed
+                            <button onclick="abrirModal2()" class="float buy-button" id="third">Compre agora o Lídermed
                                 Tech!</button>
                         </div>
                     </div>
-                    <div class="second-container-images-container">
+                    <div class="second-container-images-container-2">
+                        
                     </div>
                 </div>
             </div>
@@ -120,14 +135,16 @@
         <div class="third-container">
             <h1>Nossas Funcionalidades</h1>
             <div class="third-container-content">
-                <div>
+                <div class="giga-text">
                     <img class="third-container-icons" src="./images/BIOMETRIA_ICON.png">
                     <h2>Registro biométrico</h2>
                     <p>
                         O registro biométrico utiliza características únicas de cada indivíduo, como a impressão digital
-                        ou o reconhecimento facial para realizar a identificação com precisão. Essa tecnologia garante
-                        que cada pessoa seja reconhecida de forma única, evitando fraudes e aumentando a confiabilidade
-                        dos registros.
+                        ou o reconhecimento facial, para realizar a identificação com precisão. Essa tecnologia garante
+                        que cada pessoa seja reconhecida de forma única, evitando fraudes, erros de registro e
+                        aumentando a confiabilidade nos processos de entrega e controle de EPIs. Além de seguro, o
+                        registro biométrico/facial é rápido, prático e perfeitamente integrado aos nossos relatórios,
+                        assegurando autenticidade nas informações e total rastreabilidade.
                     </p>
                 </div>
                 <div>
@@ -166,52 +183,61 @@
                 </div>
             </div>
             <div class="buy-button-container">
-                <button onclick="abrirModal2()" class="float buy-button2" id="third">Compre agora o Lidermed
+                <button onclick="abrirModal2()" class="float buy-button2" id="third">Compre agora o Lídermed
                     Tech!</button>
             </div>
         </div>
         <!-- SEÇÃO RODAPÉ -->
         <div class="footer-content">
             <div class="left-footer">
-            <div class="contato">
-                <h3>Contato</h3>
-                <p><i class="fa-solid fa-phone"></i>  (12) 3962-4723</p>
-            </div>
-            <div class="endereco">
-                <h3>Endereço</h3>
-                <p><i class="fa-solid fa-location-dot"></i>  R. José Bonifácio, 129 - Centro, Jacareí - SP, 12327-190</p>
-                <p><i class="fa-solid fa-location-dot"></i>  R. Heloísa Monteiro Paixão, 17 - Parque Santo Amaro, Campos dos Goytacazes - RJ, 28030-590</p>
-            </div>
+                <div class="contato">
+                    <h3>Contato</h3>
+                <div class="telefone">
+                    <div><i class="fa-solid fa-phone"></i></div> <p>(12) 3962-4723</p>
+                </div>
+                </div>
+                <div class="endereco">
+                    <h3>Endereços</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> R. José Bonifácio, 129 - Centro, Jacareí - SP, 12327-190
+                    </p>
+                    <p><i class="fa-solid fa-location-dot"></i> R. Heloísa Monteiro Paixão, 17 - Parque Santo Amaro,
+                        Campos dos Goytacazes - RJ, 28030-590</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Av. Nove de Julho, 520 - Sala 13 - Jardim Apolo,
+                         São José dos Campos - SP, 12243-000</p>
+                    <p><i class="fa-solid fa-location-dot"></i> R. 13 de Maio, 1743 - Centro,
+                         Pirassununga - SP, 13631-030</p>
+                </div>
             </div>
             <div class="right-footer">
                 <h3>Nossas redes sociais</h3>
-            <div class="footer-icons">
-                <div class="social-media float">
-                    <a href="https://www.facebook.com/lidermedoficial" target="_blank">
-                <img src="./images/003-facebook.png">
-                    </a>
+                <div class="footer-icons">
+                    <div class="social-media float">
+                        <a href="https://www.facebook.com/lidermedoficial" target="_blank">
+                            <img src="./images/003-facebook.png">
+                        </a>
+                    </div>
+                    <div class="social-media float">
+                        <a href="https://www.linkedin.com/company/lidermed-seguranca-e-medicina-do-trabalho/"
+                            target="_blank">
+                            <img src="./images/001-linkedin.png">
+                        </a>
+                    </div>
+                    <div class="social-media float">
+                        <a href="https://www.instagram.com/lidermedoficial" target="_blank">
+                            <img src="./images/004-instagram.png">
+                        </a>
+                    </div>
+                    <div class="social-media float">
+                        <a href="https://www.youtube.com/@LiderMedOficial" target="_blank">
+                            <img src="./images/002-youtube.png">
+                        </a>
+                    </div>
+                    <div class="social-media float">
+                        <a href="https://open.spotify.com/show/2rGJcMDPNuxrVHwG1ufm3T" target="_blank">
+                            <img src="./images/005-spotify.png">
+                        </a>
+                    </div>
                 </div>
-                <div class="social-media float">
-                    <a href="https://www.linkedin.com/company/lidermed-seguranca-e-medicina-do-trabalho/" target="_blank">
-                <img src="./images/001-linkedin.png">
-                    </a>
-                </div>
-                <div class="social-media float">
-                    <a href="https://www.instagram.com/lidermedoficial" target="_blank">
-                <img src="./images/004-instagram.png">
-                    </a>
-                </div>
-                <div class="social-media float">
-                    <a href="https://www.youtube.com/@LiderMedOficial" target="_blank">
-                <img src="./images/002-youtube.png">
-                    </a>
-                </div>
-                <div class="social-media float">
-                    <a href="https://open.spotify.com/show/2rGJcMDPNuxrVHwG1ufm3T" target="_blank">
-                <img src="./images/005-spotify.png">
-                    </a>
-                </div>
-            </div>
             </div>
         </div>
     </main>
@@ -337,6 +363,7 @@
             </form>
         </div>
     </dialog>
+
     
     <div class="popup-3">
             <div class="popup-content-3">
@@ -344,9 +371,47 @@
             </div>
         </div>
 
+    <div class="popup-4">
+            <div class="social-media-container">
+        <div>
+            <div class="social-media-count">
+                <img src="./images/003-facebook.png">
+            </div>
+            <div class="contagem">0</div>
+        </div>
+        <div>
+            <div class="social-media-count">
+                <img src="./images/001-linkedin.png">
+            </div>
+            <div class="contagem">0</div>
+        </div>
+        <div>
+            <div class="social-media-count">
+                <img src="./images/004-instagram.png">
+            </div>
+            <div class="contagem">0</div>
+        </div>
+        <div>
+            <div class="social-media-count">
+                <img src="./images/002-youtube.png">
+            </div>
+            <div class="contagem">0</div>
+        </div>
+        <div>
+            <div class="social-media-count">
+                <img src="./images/005-spotify.png">
+            </div>
+            <div class="contagem">0</div>
+        </div>
+    </div>
+        </div>
 
+    <div class="universal-button">
+        <button class="count-button" title="estatísticas" onclick="abrirPopupContagem()"><i class="fa-solid fa-chart-column"></i></button>
+    </div>
 
     <script src="index.js"></script>
+    <script src="count.js"></script>
 </body>
 
 </html>

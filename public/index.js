@@ -13,6 +13,12 @@ async function utmVerify() {
     let utmMedium = urlParams.get('utm_medium') || '';
     let utmCampaign = urlParams.get('utm_campaign') || '';
 
+if (sessionStorage.getItem('utms_enviadas') === 'true') {
+        return;
+    }
+
+if (utmSource !== '' || utmMedium !== '' || utmCampaign !== '') {
+
     // ARMAZENA OS PARAMETROS NO LOCAL STORAGE
     localStorage.setItem('utm_source', utmSource);
     localStorage.setItem('utm_medium', utmMedium);
@@ -42,11 +48,12 @@ async function utmVerify() {
     const result = await resposta.json();
     console.log("Sucesso:", result);
 
-    
+    sessionStorage.setItem('utms_enviadas', 'true');
 
     } catch (erro) {
         console.error("Erro na requisição:", erro);
     }
+}
 }
     
 // MODAL DE DEMONSTRAÇÃO
@@ -101,6 +108,15 @@ function abrirPopupAcerto() {
     let popup = document.querySelector(".popup-3");
     popup.style.display = "flex";
     setTimeout(function() { popup.style.display = "none"; }, 2000);
+}
+
+function abrirPopupContagem() {
+    let popup = document.querySelector(".popup-4");
+    if (popup.style.display === "flex") {
+        popup.style.display = "none";
+    } else {
+        popup.style.display = "flex";
+    }
 }
 
 

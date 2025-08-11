@@ -1,0 +1,64 @@
+.popup-4 {
+    display: none;
+    width: auto;
+    height: auto;
+    background: transparent;
+    position: fixed;
+    bottom: 85px;
+    right: 25px;
+    z-index: 9999;
+    box-shadow: var(--box-shadow-default);
+    border-radius: 15px;
+}
+
+.social-media-container {
+    position: relative;
+    background-color: var(--color-teal);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-default);
+    display: flex;
+    gap: 20px;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-media-count {
+    border: 1px solid var(--color-offwhite);
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 20px;
+}
+
+.social-media-count img {
+    width: 20px;
+    height: 20px;
+}
+
+.contagem {
+    color: var(--color-white);
+    font-size: 20px;
+}
+
+/*RESPONSIVIDADE*/
+/* CELULAR EM PÉ */
+@media (max-width: 768px) and (orientation: portrait) {
+    .social-media-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}

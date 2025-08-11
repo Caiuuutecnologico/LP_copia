@@ -492,6 +492,35 @@ li h3 {
     cursor: pointer;
 }
 
+.universal-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+.universal-button a {
+    text-decoration: none;
+}
+
+.count-button {
+    background-color: var(--color-teal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    box-shadow: var(--box-shadow-default);
+}
+
+.fa-chart-column {
+    color: var(--color-white);
+    font-size: 20px;
+}
+
 /*RESPONSIVIDADE*/
 /* CELULAR EM PÉ */
 @media (max-width: 768px) and (orientation: portrait) {
